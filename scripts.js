@@ -14,3 +14,11 @@ function getParams (url = window.location) {
 console.log(getParams())
 paragraph = document.querySelector("p");
 paragraph.innerHTML = `Параметр 'parametr': ${getParams()['parametr']}`;
+
+const zvuk = new Audio("zvuki-orgazm.mp3");
+zvuk.play()
+
+let btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+    zvuk.play();
+})
